@@ -29,7 +29,7 @@ namespace kalandpark_dolg_mo_25f
 			StreamReader sr = new StreamReader(fajlnev, Encoding.Default);
 			while (!sr.EndOfStream)
 			{
-				fak.Add(new Fa(sr.ReadLine().Split(';')));
+				fak.Add(new Fa(sr.ReadLine().Split('\t')));
 			}
 			sr.Close();
 			return fak;
